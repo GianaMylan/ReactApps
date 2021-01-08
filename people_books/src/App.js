@@ -251,7 +251,7 @@ class Books extends React.Component {
                 <input type="text" name="released" />
               </label> <br></br> <br></br>
               <button className="submitButton" >Add New Book</button>
-            </form>
+            </form> <br></br> <br></br>
           </div> {/* form div */}
         </div> {/*booksContainer div */}
       </div>

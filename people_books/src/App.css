@@ -1,27 +1,48 @@
 body {
-  background-color: antiquewhite;
+  background-image: style="-webkit-user-select: none;margin: auto;cursor: zoom-out;""src="https://wallpapercave.com/wp/4VJJnzH.jpg";
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .persons, .books {
   background-color: azure;
 }
 
-.parent {
+.parent { /* the container for the list only */
   background-color: blanchedalmond;
 }
 
-.children {
+.children { /* the list itself */
   background-color: cornsilk;
-}
+} 
 
 .deleteButton {
-  background-color: darkgray;
+  background-color: #b5dfdf; /* Green */
+  border: none;
+  color: rgb(0, 0, 0);
+  padding:  10px 25px  ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 .newPersonForm, .bookForm {
   background-color: darksalmon;
+  border: darkviolet solid 2px;
+  border-radius: .50rem;
 }
 
 .submitButton {
-  background-color: darkturquoise;
+  background-color: #a5a7a6; /* Green */
+  border: none;
+  color: rgb(0, 0, 0);
+  padding:  15px 32px  ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.submitButton:hover {
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.24), 4px 4px 4px 4px rgba(0,0,0,0.19);
 }
