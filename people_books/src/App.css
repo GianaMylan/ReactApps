@@ -1,0 +1,27 @@
+body {
+  background-color: antiquewhite;
+}
+
+.persons, .books {
+  background-color: azure;
+}
+
+.parent {
+  background-color: blanchedalmond;
+}
+
+.children {
+  background-color: cornsilk;
+}
+
+.deleteButton {
+  background-color: darkgray;
+}
+
+.newPersonForm, .bookForm {
+  background-color: darksalmon;
+}
+
+.submitButton {
+  background-color: darkturquoise;
+}

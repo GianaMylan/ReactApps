@@ -113,8 +113,9 @@ class Persons extends React.Component {
     return (
       <div className="persons">
         <h1>Title for Persons!</h1>
+        <div className="parent">
         <ul>
-          <div className="parent"> 
+          <div> 
             { 
             this.state.persons && this.state.persons.map(persons => (
               <li className="children">
@@ -128,9 +129,10 @@ class Persons extends React.Component {
               </li> 
             ))
             }
-          </div> <br></br>
+          </div> <br></br> {/* class parent */}
           <br></br>
         </ul> <br></br>
+        </div>
         <div>
           <form className="newPersonForm"
             onChange={ this.handleChange }
@@ -155,7 +157,7 @@ class Persons extends React.Component {
             <input type="submit" className="submitButton" /> 
           </form>
         </div>
-      </div>
+      </div> /* class persons */
     )
   }
 }
