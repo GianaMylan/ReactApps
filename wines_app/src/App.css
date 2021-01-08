@@ -1,0 +1,29 @@
+body {
+  background-color: aliceblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.new-wine-form {
+  border: blueviolet solid 2px;
+  border-radius: .25rem;
+  display: grid;
+  grid-auto-columns: auto;
+  padding: 5pt;
+  margin: 10pt;
+}
+
+.submitButton {
+  background-color: rgb(149, 192, 221);
+  font-size: 16pt;
+  font-weight: bolder;
+  margin: 10pt;
+  border-radius: .50rem;
+}
+.wine-edit-form {
+  border: blueviolet solid 2px;
+  border-radius: .25rem;
+  display: grid;
+  grid-auto-columns: auto;
+  padding: 5pt;
+  margin: 10pt;
+}
