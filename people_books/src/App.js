@@ -50,7 +50,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className="home">
-      <h1> Home component works! </h1>
+      <h1 className="title"> Welcome to the People and Book App </h1>
       </div>
     )
   }
@@ -112,7 +112,7 @@ class Persons extends React.Component {
   render() {
     return (
       <div className="persons">
-        <h1>Title for Persons!</h1>
+        <h1 className="title"> The people of the site </h1>
         <div className="parent">
         <ul>
           <div> 
@@ -125,7 +125,8 @@ class Persons extends React.Component {
               <br></br>
               Username: { persons.username }
               <br></br> <br></br>
-              <button className="deleteButton" onClick={ () => this.handleDelete(persons.id)}>Delete User</button><br></br> 
+              <button className="deleteButton" onClick={ () => this.handleDelete(persons.id)}>Delete User</button><br></br>
+              <br></br> 
               </li> 
             ))
             }
@@ -217,7 +218,7 @@ class Books extends React.Component {
   render () {
     return (
       <div className="books">
-        <h1>Books component Working!</h1>
+        <h1 className="title"> Reading List </h1>
         <div>
           <div className="parent">
           <ul>

@@ -1,18 +1,21 @@
 body {
-  background-image: style="-webkit-user-select: none;margin: auto;cursor: zoom-out;""src="https://wallpapercave.com/wp/4VJJnzH.jpg";
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url("https://wallpapercave.com/wp/4VJJnzH.jpg");
+  background-repeat: no-repeat;
+  font-family: 120% Georgia, 'Times New Roman', Times, serif;
 }
 
-.persons, .books {
-  background-color: azure;
+.title {
+  font-size: 30pt;
 }
 
 .parent { /* the container for the list only */
-  background-color: blanchedalmond;
+  background-color: rgb(255, 236, 207, .7);
+  max-width: 750px;
 }
 
 .children { /* the list itself */
-  background-color: cornsilk;
+  background-color: rgb(255, 248, 219, .8);
+  max-width: 500px;
 } 
 
 .deleteButton {
@@ -26,10 +29,16 @@ body {
   font-size: 16px;
 }
 
+.deleteButton:hover {
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.24), 4px 4px 4px 4px rgba(0,0,0,0.19);
+  cursor: pointer;
+}
+
 .newPersonForm, .bookForm {
-  background-color: darksalmon;
+  background-color: rgb(233, 150, 122, .5);
   border: darkviolet solid 2px;
   border-radius: .50rem;
+  max-width: 400px;
 }
 
 .submitButton {
@@ -45,4 +54,5 @@ body {
 
 .submitButton:hover {
   box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.24), 4px 4px 4px 4px rgba(0,0,0,0.19);
+  cursor: pointer;
 }
