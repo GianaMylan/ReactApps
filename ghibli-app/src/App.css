@@ -25,10 +25,11 @@ ul {
   display: grid;
 }
 
-.slideshow {
+.crossfade {
   display: grid;
-  height: auto;
-  width: auto;
+  border: solid black 2pt;
+  height: 750px;
+  width: 750px;
 }
 
 .crossfade > figure {
@@ -36,6 +37,7 @@ ul {
   backface-visibility: hidden;
   background-size: contain;
   background-position: center center;
+  background-repeat: no-repeat;
   color: transparent;
   height: 95%;
   left: 0px;
