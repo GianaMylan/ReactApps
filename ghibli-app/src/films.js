@@ -46,7 +46,7 @@ export class Films extends React.Component {
             </ul>
           </div>
         </div>
-        /* title, description, director, producer, release_date, rt_score, characters {state.people.film}, species {state.species.id} */
+        /* title, description, director, producer, release_date, rt_score, characters {state.people}, species {state.species.id} */
       )
     }
   }

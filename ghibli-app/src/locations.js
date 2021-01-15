@@ -34,7 +34,7 @@ export class Locations extends React.Component {
                         <input type="text" name="search" placeholder="Search" />
                     </label>
                 </div> <br></br> 
-                <div className="filmList">
+                <div className="locationsList">
                     <ul>
                         { this.state.locations && this.state.locations.map(locations => (
                             <li key={locations.id}>

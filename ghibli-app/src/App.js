@@ -12,6 +12,8 @@ import Films from './films';
 import People from './characters';
 import Location from './locations';
 
+// BASE_URL = 'https://ghibliapi.herokuapp.com/' + "character/id/r89028"
+//dedicated links 
 
 class App extends React.Component {
     render() {
