@@ -1,6 +1,5 @@
 import React from "react";
 import axios from 'axios';
-import {Link} from 'react-router-dom';
 
 //const PEOPLE_URL = 'https://ghibliapi.herokuapp.com/people'
 
@@ -12,8 +11,9 @@ export class charDetail extends React.Component {
 
     async getPeopleDetail() {
         try {
-            const res = await axios.get(`https://ghibliapi.herokuapp.com/people/{person[].id}`);
+            const res = await axios.get(`https://ghibliapi.herokuapp.com/people/<id>`);
             this.setState({ people: res.data })
+            console.log()
         } catch(e) {
             console.error(e.messaage);
         }
