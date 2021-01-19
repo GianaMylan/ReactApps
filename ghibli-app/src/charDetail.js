@@ -1,7 +1,7 @@
 import React from "react";
 import axios from 'axios';
 
-//const PEOPLE_URL = 'https://ghibliapi.herokuapp.com/people'
+//const PEOPLE_URL = 'https://ghibliapi.herokuapp.com/people/{id}'
 
 export class charDetail extends React.Component {
     constructor(props) {
@@ -11,28 +11,24 @@ export class charDetail extends React.Component {
 
     async getPeopleDetail() {
         try {
-            const res = await axios.get(`https://ghibliapi.herokuapp.com/people/<id>`);
-            this.setState({ people: res.data })
-            console.log()
+            const res = await axios.get(`https://ghibliapi.herokuapp.com/people/{id}`);
+            this.setState({ id: res.data })
+            console.log(res.data)
         } catch(e) {
             console.error(e.messaage);
         }
     }
-
+/*
     componentDidMount() {
         this.getPeopleDetail();
     }
-
+*/
     render() {
     return (
-    <div className="charDetail">
-        <div className="containerTitle">
-            <h2> Name{/* character name */} </h2>
+        <div>
+            <h2> Character </h2>
+            <div> {  }</div>
         </div>
-        <div className="character">
-
-        </div>
-    </div>
     /* name, gender, age, eye_color, hair_color, species{state.species.id}, films{state.films.id} */
     )
   }

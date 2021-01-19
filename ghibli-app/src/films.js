@@ -1,6 +1,6 @@
 import React from "react";
 import axios from 'axios';
-
+import {Link} from 'react-router-dom';
 
 const FILMS_URL = 'https://ghibliapi.herokuapp.com/films'
 
@@ -37,15 +37,15 @@ export class Films extends React.Component {
             </label> <br></br> <br></br>
         </div>
           <div className="filmList">
-            
+            <ul>
                 {
                   this.state.films && this.state.films.map(films => (
                     <li key={films.id}>
-                      { films.title } ({ films.release_date })
+                      <Link to={`/films/${films.id}`} className="Link"> { films.title } ({ films.release_date }) </Link>
                     </li>
                   ))
                 }
-            
+            </ul>
           </div>
         </div>
         /* title, description, director, producer, release_date, rt_score, characters {state.people}, species {state.species.id} */

@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios'; 
+import {Link} from 'react-router-dom';
 
 const LOCATIONS_URL = 'https://ghibliapi.herokuapp.com/locations'
 
@@ -39,7 +40,7 @@ export class Locations extends React.Component {
                     <ul>
                         { this.state.locations && this.state.locations.map(locations => (
                             <li key={locations.id}>
-                                { locations.name }
+                                <Link to={`/locations/${locations.id}`} className="Link">{ locations.name }</Link> 
                             </li>
                         ))}
                     </ul>
