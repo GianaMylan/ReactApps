@@ -13,6 +13,7 @@ export class Locations extends React.Component {
        try {
            const res = await axios.get(LOCATIONS_URL);
            this.setState({ locations: res.data })
+           console.log(res.data)
        } catch(e) {
            console.error(e.message);
        }

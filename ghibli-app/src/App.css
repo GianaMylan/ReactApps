@@ -4,7 +4,7 @@
   text-align: center;
 }
 
-ul {
+ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -12,21 +12,24 @@ ul {
 
 .homeLink, .peopleLink, .filmLink, .locationLink {
   color: rgb(143, 0, 131);
-  display: grid;
 }
 
-.navigation {
+nav{
   background-color: aliceblue;
-  display: grid;
+  display: flex;
+  justify-items: space-around;
+  align-items: center;
+  min-height: 10vh;
+  color: black;
 }
 
 .homeClass, .peopleClass, .filmClass, .locationClass {
   background-color: rgb(255, 249, 240);
-  display: grid;
+
 }
 
 .crossfade {
-  display: grid;
+
   border: solid black 2pt;
   height: 50%;
   width: 75%;

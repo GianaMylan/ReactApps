@@ -11,6 +11,7 @@ import {
 import Films from './films';
 import People from './characters';
 import Location from './locations';
+import charDetail from './charDetail';
 
 // BASE_URL = 'https://ghibliapi.herokuapp.com/' + "character/id/r89028"
 //dedicated links 
@@ -23,37 +24,20 @@ class App extends React.Component {
           <h1 className="title">Welcome to the Ghibli 'Wiki'</h1>
           <div className="navigation">
             <nav>
-              <ul>
-                <li>
-                  <Link to="/" className="homeLink">Home</Link>
-                </li>
-                <li>
-                  <Link to="/people" className="peopleLink">Characters</Link>
-                </li>
-                <li>
-                  <Link to="/films" className="filmLink">Films</Link>
-                </li>
-                <li>
-                  <Link to="/location" className="locationLink">Locations</Link>
-                </li>
-              </ul>
+              <Link to="/" className="homeLink">Home</Link>
+              <Link to="/people" className="peopleLink">Characters</Link>
+              <Link to="/films" className="filmLink">Films</Link>
+              <Link to="/location" className="locationLink">Locations</Link>
             </nav>
 
             {/* A <Switch> looks through its children <Route>s and
                 renders the first one that matches the current URL. */}
             <Switch>
-              <Route path="/people">
-                <People />
-              </Route>
-              <Route path="/films">
-                <Films />
-              </Route>
-              <Route path="/location">
-                <Location />
-              </Route>
-              <Route path="/">
-                <Home />
-              </Route>
+              <Route path="/people" exact component={People} />
+              <Route path="/people/:id" component={charDetail} />
+              <Route path="/films" component={Films} />
+              <Route path="/location" component={Location} />
+              <Route path="/" exact component={Home} />
             </Switch>
             </div>
         </Router>

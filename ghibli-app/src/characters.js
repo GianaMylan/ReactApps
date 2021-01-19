@@ -1,5 +1,6 @@
 import React from "react";
 import axios from 'axios';
+import {Link} from 'react-router-dom';
 
 const PEOPLE_URL = 'https://ghibliapi.herokuapp.com/people'
 
@@ -13,8 +14,9 @@ export class People extends React.Component {
         try {
             const res = await axios.get(PEOPLE_URL);
             this.setState({ people: res.data })
+            console.log(res.data)
         } catch(e) {
-            console.error(e.messaage);
+            console.error(e.message);
         }
     }
 
@@ -40,7 +42,7 @@ export class People extends React.Component {
                 {
                     this.state.people && this.state.people.map( people => (
                         <li key={ people.id }>
-                             { people.name } 
+                             <Link to={`/people/${people.id}`}>{ people.name }</Link> 
                         </li>
                     ))
                 }

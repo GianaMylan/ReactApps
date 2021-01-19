@@ -1,6 +1,7 @@
 import React from "react";
 import axios from 'axios';
 
+
 const FILMS_URL = 'https://ghibliapi.herokuapp.com/films'
 
 export class Films extends React.Component {
@@ -13,6 +14,7 @@ export class Films extends React.Component {
       try {
         const res = await axios.get(FILMS_URL);
         this.setState({ films: res.data })
+        console.log(res.data)
       } catch (e) {
         console.error (e.message);
       }
@@ -35,7 +37,7 @@ export class Films extends React.Component {
             </label> <br></br> <br></br>
         </div>
           <div className="filmList">
-            <ul>
+            
                 {
                   this.state.films && this.state.films.map(films => (
                     <li key={films.id}>
@@ -43,7 +45,7 @@ export class Films extends React.Component {
                     </li>
                   ))
                 }
-            </ul>
+            
           </div>
         </div>
         /* title, description, director, producer, release_date, rt_score, characters {state.people}, species {state.species.id} */
