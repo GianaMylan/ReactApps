@@ -26,9 +26,11 @@ function LocationDetails ({match}) {
            <h2> locale in Ghibli </h2>
            <div>
               <h2> {item.name} </h2> <br></br> 
-              <b>Climate: </b> {item.climate} <br></br> 
-              <b>Terrain: </b> {item.terrain} <br></br> 
-              Seen In: <br></br>
+              <b>Climate: </b> <br></br> 
+              {item.climate} <br></br> <br></br>
+              <b>Terrain: </b> <br></br> 
+              {item.terrain} <br></br> <br></br>
+              <b>Seen In: </b> <br></br>
               {item.films}<br></br> <br></br>
               <b> Residents: </b> <br></br>
               {item.residents} <br></br>

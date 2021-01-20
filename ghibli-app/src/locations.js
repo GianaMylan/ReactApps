@@ -40,7 +40,7 @@ export class Locations extends React.Component {
                     <ul>
                         { this.state.locations && this.state.locations.map(locations => (
                             <li key={locations.id}>
-                                <Link to={`/locations/${locations.id}`} className="Link">{ locations.name }</Link> 
+                                <Link to={`/location/${locations.id}`} className="Link">{ locations.name }</Link> 
                             </li>
                         ))}
                     </ul>

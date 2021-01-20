@@ -8,6 +8,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Home from './home';
 import Films from './films';
 import People from './characters';
 import Location from './locations';
@@ -52,34 +53,5 @@ class App extends React.Component {
     );
   }
 }
-
-class Home extends App{
-  render() {
-    return ( 
-    <div className="homeClass">
-      <h2>Studio Ghibli
-      </h2>
-      <div className="slideshow">
-          <div className="crossfade">
-              <figure></figure> <figure></figure> <figure></figure> 
-              <figure></figure> <figure></figure> <figure></figure>
-              <figure></figure> <figure></figure> <figure></figure>
-              <figure></figure>
-          </div>
-        </div>
-      <div className="about">
-        <h5> Hayao Miyazaki's films and media have been popular for many years. This page is dedicated to information about the iconic films he created. </h5>
-      </div>
-      <div>
-        <footer> All information sourced from: 
-        The Studio Ghibli API<br></br>
-        Page created by: Giana Mylan</footer>
-      </div>
-
-    </div>
-    )
-  }
-}
-
 
 export default App;
