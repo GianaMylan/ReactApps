@@ -12,7 +12,7 @@ import Films from './films';
 import People from './characters';
 import Location from './locations';
 import charDetail from './charDetail';
-import localDetail from './localDetails';
+import locationDetails from './localDetails';
 import filmDetail from './filmDetail';
 
 // BASE_URL = 'https://ghibliapi.herokuapp.com/' + "character/id/r89028"
@@ -42,7 +42,7 @@ class App extends React.Component {
               <Route path="/films" exact component={Films} />
               <Route path="/films/:id" component={filmDetail} />
               <Route path="/location" exact component={Location} />
-              <Route path="/location/:id" component={localDetail} />
+              <Route path="/location/:id" component={locationDetails} />
               <Route path="/" exact component={Home} />
             </Switch>
             </div>
