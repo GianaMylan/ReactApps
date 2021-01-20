@@ -42,7 +42,7 @@ export class People extends React.Component {
                 {
                     this.state.people && this.state.people.map( people => (
                         <li key={ people.id }>
-                             <Link to={`/people/${people.id}`} className="Link">{ people.name }</Link> 
+                             <Link to={`/people/${people.id}`} className="Link"> { people.name }  </Link> 
                         </li>
                     ))
                 }

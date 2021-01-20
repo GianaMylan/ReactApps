@@ -1,36 +1,38 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 //const LOCATIONS_URL = 'https://ghibliapi.herokuapp.com/locations/<id>'
 
-export class localDetails extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
 
-    async getLocations() {
+function LocationDetails (match) {
+    useEffect(() => {
+       getLocationDetail();
+      console.log(match);
+   }, []);
+
+   const [local, setLocation] = useState({});
+
+   const getLocationDetail = async() => {
        try {
-           const res = await axios.get(``);
-           this.setState({ locations: res.data })
-           console.log(res.data)
+           const res = await axios.get(`https://ghibliapi.herokuapp.com/locations/${match.params.id}`);
+           setLocation( res.data );
+           console.log( res.data );
        } catch(e) {
            console.error(e.message);
        }
-    }
-    /*
-    componentDidMount() {
-        this.getPeopleDetail();
-    }
-*/
-render() {
-    return (
-        <div>
-            <h2> Location </h2>
-        </div>
-    /* name, gender, age, eye_color, hair_color, species{state.species.id}, films{state.films.id} */
-    )
-  }
-}
+   }
+   return(
+       <div> 
+           <h2> locale in Ghibli </h2>
+           <div>
+              <h2> {local.name} </h2> <br></br> 
+              {local.climate} <br></br> 
+              {local.terrain} <br></br> 
+              Seen In: <br></br>
+              {local.films}<br></br> 
+           </div>
+       </div>
+   )
+} /* name, climate, terrain, residents, films */
 
-export default localDetails ;
+export default LocationDetails ;

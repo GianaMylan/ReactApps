@@ -37,9 +37,9 @@ class App extends React.Component {
             <Switch>
               <Route path="/people" exact component={People} />
               <Route path="/people/:id" component={charDetail} />
-              <Route path="/films" component={Films} />
+              <Route path="/films" exact component={Films} />
               <Route path="/films/:id" component={filmDetail} />
-              <Route path="/location" component={Location} />
+              <Route path="/location" exact component={Location} />
               <Route path="/location/:id" component={localDetail} />
               <Route path="/" exact component={Home} />
             </Switch>
@@ -67,6 +67,11 @@ class Home extends App{
         </div>
       <div className="about">
         <h5> Hayao Miyazaki's films and media have been popular for many years. This page is dedicated to information about the iconic films he created. </h5>
+      </div>
+      <div>
+        <footer> All information sourced from: <br></br>
+        https://ghibliapi.herokuapp.com/<br></br>
+        Page created by: Giana Mylan</footer>
       </div>
 
     </div>

@@ -40,12 +40,25 @@ nav{
 
 }
 
+.slideshow {
+  display: grid;
+  justify-content: center;
+}
+
+footer {
+  font-size: 9pt;
+  text-align: center;
+  justify-items: space-between;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
 
 .crossfade {
 
-  border: solid black 2pt;
-  display: flex;
-  justify-self: center;
+  border: solid rgb(205, 235, 185) 5pt;
+  border-radius: .5rem;
+  display: grid;
+  justify-content: center;
   height: 50vh;
   width: 50vw;
   overflow: auto;
@@ -53,7 +66,7 @@ nav{
 }
 
 /*
-.crossfade > figure {
+.crossfade > img {
   animation: imageAnimation, 70s linear infinite 70s;
   backface-visibility: hidden;
   background-size: contain;
@@ -67,6 +80,7 @@ nav{
   z-index: 0;
 }
 
+/*
 .crossfade > figure:nth-child(1) { 
   animation-delay: 0s;
   background-image: url('./images/1.jpg'); 
@@ -109,7 +123,7 @@ nav{
 }
 
 
-
+/*
 @keyframes 
 imageAnimation {  
 0% {
