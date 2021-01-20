@@ -2,6 +2,7 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
   text-align: center;
+  min-height: 10vh;
 }
 
 ul{
@@ -28,10 +29,11 @@ ul{
 
 nav{
   background-color: aliceblue;
+  font-size: 16pt;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
+  min-height: 7vh;
   color: black;
 }
 
@@ -49,8 +51,8 @@ footer {
   font-size: 9pt;
   text-align: center;
   justify-items: space-between;
+  word-spacing: 5px;
   letter-spacing: 2px;
-  word-spacing: 2px;
 }
 
 .crossfade {

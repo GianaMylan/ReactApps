@@ -18,7 +18,7 @@ const fetchItem = async () => {
 */
 
 
-function CharDetail (match) {
+function CharDetail ({match}) {
      useEffect(() => {
         getPeopleDetail()
        console.log(match)
@@ -30,7 +30,7 @@ function CharDetail (match) {
         try {
             const res = await axios.get(`https://ghibliapi.herokuapp.com/people/${match.params.id}`);
             setCharacter( res.data )
-            console.log( res.data )
+            //console.log( res.data )
         } catch(e) {
             console.error(e.message);
         }
@@ -38,11 +38,13 @@ function CharDetail (match) {
     return(
         <div> 
             <div>
-               <h2> {item.name} </h2> <br></br> 
-               {item.age} <br></br> 
-               {item.gender} <br></br> 
-               {item.hair_color}<br></br> 
-               {item.eye_color} <br></br> 
+               <h2> {item.name} </h2> 
+               <b>Age:</b> {item.age} <br></br> 
+               <b>Gender:</b> {item.gender} <br></br> 
+               <b>Hair Color:</b>  {item.hair_color}<br></br> 
+               <b>Eye Color:</b> {item.eye_color} <br></br> 
+               <b>Species:</b> {item.species} <br></br>
+               <b>Appeared In:</b> {item.films}
             </div>
         </div>
     )

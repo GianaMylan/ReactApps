@@ -4,13 +4,13 @@ import axios from 'axios';
 //const LOCATIONS_URL = 'https://ghibliapi.herokuapp.com/locations/<id>'
 
 
-function LocationDetails (match) {
+function LocationDetails ({match}) {
     useEffect(() => {
        getLocationDetail();
       console.log(match);
    }, []);
 
-   const [local, setLocation] = useState({});
+   const [item, setLocation] = useState({});
 
    const getLocationDetail = async() => {
        try {
@@ -25,11 +25,11 @@ function LocationDetails (match) {
        <div> 
            <h2> locale in Ghibli </h2>
            <div>
-              <h2> {local.name} </h2> <br></br> 
-              {local.climate} <br></br> 
-              {local.terrain} <br></br> 
+              <h2> {item.name} </h2> <br></br> 
+              <b>Climate: </b> <br></br> 
+              <b>Terrain: </b> <br></br> 
               Seen In: <br></br>
-              {local.films}<br></br> 
+              <br></br> 
            </div>
        </div>
    )

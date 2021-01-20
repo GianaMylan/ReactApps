@@ -23,7 +23,9 @@ class App extends React.Component {
     return (
       <div>
         <Router>
-          <h1 className="title">Welcome to the Ghibli 'Wiki'</h1>
+          <div  className="title">
+            <h1>Welcome to the Ghibli 'Wiki'</h1>
+          </div>
           <div className="navigation">
             <nav>
               <Link to="/" className="Link">Home</Link>
@@ -69,8 +71,8 @@ class Home extends App{
         <h5> Hayao Miyazaki's films and media have been popular for many years. This page is dedicated to information about the iconic films he created. </h5>
       </div>
       <div>
-        <footer> All information sourced from: <br></br>
-        https://ghibliapi.herokuapp.com/<br></br>
+        <footer> All information sourced from: 
+        The Studio Ghibli API<br></br>
         Page created by: Giana Mylan</footer>
       </div>
 
