@@ -25,7 +25,7 @@ class App extends React.Component {
       <div>
         <Router>
           <div  className="title">
-            <h1>Welcome to the Ghibli 'Wiki'</h1>
+            <h1 className="mainTitle">Welcome to the Ghibli 'Wiki'</h1>
           </div>
           <div className="navigation">
             <nav>

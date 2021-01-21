@@ -30,12 +30,12 @@ export class Films extends React.Component {
           <div className="filmTitle">
           <h2>Films : <br></br> </h2>
           </div>
-          <div className="searchContainer"> 
+          {/*<div className="searchContainer"> 
             <label className="search">
                 Search:
                 <input type="text" name="search" placeholder="Search" />
             </label> <br></br> <br></br>
-        </div>
+          </div>*/}
           <div className="filmList">
             <ul>
                 {
@@ -46,6 +46,11 @@ export class Films extends React.Component {
                   ))
                 }
             </ul>
+          </div>
+          <div>
+              <footer> All information sourced from: 
+              The Studio Ghibli API<br></br>
+              Page created by: Giana Mylan</footer>
           </div>
         </div>
         /* title, description, director, producer, release_date, rt_score, characters {state.people}, species {state.species.id} */

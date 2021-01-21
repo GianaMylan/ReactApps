@@ -36,6 +36,11 @@ import axios from 'axios';
                   <b> Species: </b> <br></br>
                   <li> {item.species} </li>
                </div>
+                <div>
+                    <footer> All information sourced from: 
+                    The Studio Ghibli API<br></br>
+                    Page created by: Giana Mylan</footer>
+                </div>
            </div>
        )
    }

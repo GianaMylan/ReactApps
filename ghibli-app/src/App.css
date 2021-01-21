@@ -1,8 +1,19 @@
 .title {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
+  text-shadow: #6d097a 2px 2px 0px, #eb7ebd 4px 4px 0px, -4px 6px 6px rgba(89, 209, 224, 0.37);
+  color: white;
   text-align: center;
-  min-height: 10vh;
+  background-image: url('https://wallpaperaccess.com/full/2742990.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mainTitle {
+}
+
+body {
+
 }
 
 ul{
@@ -37,10 +48,7 @@ nav{
   color: black;
 }
 
-.homeClass, .peopleClass, .filmClass, .locationClass {
-  background-color: rgb(255, 255, 255);
 
-}
 
 .slideshow {
   display: grid;

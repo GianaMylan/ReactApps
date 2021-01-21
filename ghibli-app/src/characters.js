@@ -31,12 +31,12 @@ export class People extends React.Component {
             <h2>Characters <br></br>
             list goes here </h2>
         </div>
-        <div className="searchContainer"> 
+        {/*<div className="searchContainer"> 
             <label className="search">
                 Search:
                 <input type="text" name="search" placeholder="Search" />
             </label> <br></br> <br></br>
-        </div>
+        </div>*/}
         <div className="charList">
             <ul>
                 {
@@ -47,6 +47,11 @@ export class People extends React.Component {
                     ))
                 }
             </ul>
+        </div>
+        <div>
+            <footer> All information sourced from: 
+            The Studio Ghibli API<br></br>
+            Page created by: Giana Mylan</footer>
         </div>
     </div>
     /* name, gender, age, eye_color, hair_color, species{state.species.id}, films{state.films.id} */

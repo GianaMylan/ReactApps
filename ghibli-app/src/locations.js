@@ -30,12 +30,12 @@ export class Locations extends React.Component {
                 <div className="filmTitle">
                 <h2> Locations in Films: </h2>
                 </div>
-                <div className="searchContainer"> 
+                {/*<div className="searchContainer"> 
                     <label className="search">
                         Search:
                         <input type="text" name="search" placeholder="Search" />
                     </label>
-                </div> <br></br> 
+                </div>*/} <br></br> 
                 <div className="locationsList">
                     <ul>
                         { this.state.locations && this.state.locations.map(locations => (
@@ -44,6 +44,11 @@ export class Locations extends React.Component {
                             </li>
                         ))}
                     </ul>
+                </div>
+                <div>
+                    <footer> All information sourced from: 
+                    The Studio Ghibli API<br></br>
+                    Page created by: Giana Mylan</footer>
                 </div>
             </div>
             /* name, climate, terrain, residents, films */

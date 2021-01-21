@@ -35,6 +35,11 @@ function LocationDetails ({match}) {
               <b> Residents: </b> <br></br>
               {item.residents} <br></br>
            </div>
+           <div>
+                <footer> All information sourced from: 
+                The Studio Ghibli API<br></br>
+                Page created by: Giana Mylan</footer>
+            </div>
        </div>
    )
 } /* name, climate, terrain, residents, films */

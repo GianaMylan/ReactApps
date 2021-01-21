@@ -52,6 +52,11 @@ function CharDetail ({match}) {
                <b>Appeared In:</b> <br></br>
                {item.films}
             </div>
+            <div>
+                <footer> All information sourced from: 
+                The Studio Ghibli API<br></br>
+                Page created by: Giana Mylan</footer>
+            </div>
         </div>
     )
 }
