@@ -13,7 +13,7 @@
 }
 
 body {
-
+  cursor: url(https://vignette.wikia.nocookie.net/studio-ghibli/images/4/49/Cursor1.png);
 }
 
 ul{
@@ -23,16 +23,17 @@ ul{
 }
 
 .Link {
-  color: rgb(4, 149, 206);
+  color: rgb(238, 57, 255);
   text-decoration-line: none;
 }
 .Link:visited {
-  color:  rgb(4, 149, 206);
+  color:  rgb(238, 57, 255);
 }
 .Link:hover {
-  color: rgb(255, 255, 255);
-  background-color: rgb(228, 147, 160);
-  text-decoration: underline;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-shadow: #6699FF 0 0 5px, #6699FF 0 0 5px, #6699FF 0 0 5px, #6699FF 0 0 5px, #6699FF 0 0 5px, #6699FF 0 0 5px, #6699FF 0 0 5px, #6699FF 0 0 5px;
+  transition: all 0.5s ease-in;
 }
 .Link:active {
   color: rgb(255, 0, 0);
@@ -48,7 +49,9 @@ nav{
   color: black;
 }
 
-
+.about{
+  text-align: center;
+}
 
 .slideshow {
   display: grid;

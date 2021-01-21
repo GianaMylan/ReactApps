@@ -28,14 +28,14 @@ export class Locations extends React.Component {
         return (
             <div className="locationClass">
                 <div className="filmTitle">
-                <h2> Locations in Films: </h2>
+                <h2> Locations in Films : </h2>
                 </div>
                 {/*<div className="searchContainer"> 
                     <label className="search">
                         Search:
                         <input type="text" name="search" placeholder="Search" />
                     </label>
-                </div>*/} <br></br> 
+                </div>*/}  
                 <div className="locationsList">
                     <ul>
                         { this.state.locations && this.state.locations.map(locations => (

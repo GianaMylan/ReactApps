@@ -5,7 +5,7 @@ class Home extends React.Component{
     render() {
       return ( 
       <div className="homeClass">
-        <h2>Studio Ghibli
+        <h2>Studio Ghibli 株式会社スタジオジブリ
         </h2>
         <div className="slider-wrapper">
             <div className="slider">

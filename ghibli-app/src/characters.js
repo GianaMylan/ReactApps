@@ -28,8 +28,7 @@ export class People extends React.Component {
     return (
     <div className="peopleClass">
         <div className="containerTitle">
-            <h2>Characters <br></br>
-            list goes here </h2>
+            <h2>Characters : <br></br> </h2>
         </div>
         {/*<div className="searchContainer"> 
             <label className="search">
